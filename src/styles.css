@@ -1,56 +1,85 @@
+/* Background */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f9;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
   color: #333;
 }
 
-h1 {
+/* Container Card */
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-top: 20px;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
-.container {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Headings */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #222;
 }
 
 h2 {
-  margin-top: 0;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #444;
 }
 
+/* Buttons */
 button {
-  margin: 5px;
-  padding: 10px 15px;
+  margin: 8px;
+  padding: 10px 20px;
   border: none;
   background: #007bff;
   color: white;
-  font-size: 14px;
-  border-radius: 6px;
+  font-size: 15px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 button:hover {
   background: #0056b3;
+  transform: scale(1.05);
 }
 
+/* Cart List */
 ul {
   list-style: none;
   padding: 0;
+  margin-top: 15px;
 }
 
 li {
-  background: #eee;
-  margin: 5px 0;
-  padding: 8px;
-  border-radius: 5px;
+  background: #f1f1f1;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: #e0e0e0;
+}
+
+/* Labels */
+p {
+  margin: 10px 0;
+  font-weight: 500;
 }
