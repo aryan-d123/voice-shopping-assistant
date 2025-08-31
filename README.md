@@ -17,7 +17,8 @@ Built as part of Assignment 1.
 ---
 
 ## 🚀 Live Demo
-👉 [Click here to use the app](https://YOUR-NETLIFY-LINK.netlify.app)
+👉 [Click here to use the app](https://voiceshoppingassistant.netlify.app
+)
 
 ---
 
